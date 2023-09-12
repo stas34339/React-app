@@ -1,0 +1,16 @@
+.footer-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: #858585;
+  font-weight: 400;
+  font-size: 15px;
+  gap: 40px;
+}
+.footer-block .tale, .footer-block .user, .footer-block .date {
+  text-transform: capitalize;
+}
+.footer-block .email a {
+  color: #858585;
+}/*# sourceMappingURL=footer.css.map */
