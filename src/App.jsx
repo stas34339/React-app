@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './reset.css'
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
+import Tweet from './components/Tweet/Tweet'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <Main />
+      <Tweet />
       <Footer />
     </>
   )

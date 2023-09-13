@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './Main.css'
 import { FiMessageCircle } from "react-icons/fi";
-import { FiSearch } from "react-icons/fi";
 
 function Main() {
     return (
