@@ -30,6 +30,70 @@ function Tweet() {
                         </div>
                     </div>
                 </div>
+                <div className="comments">
+                    <p>comments</p>
+                    <div className="comment">
+                        <div className='avatar'>
+
+                        </div>
+                        <div className="comment-place">
+                            <div className='tweet-person'>
+                                <div className='username'>
+                                    Alexandra Carpova
+                                </div>
+                                <div className='datecom'>
+                                    17 Feb 2022 <span className="timecom">20:00</span> 
+                                </div>
+                            </div>
+                            <p className="comtext">
+                                Круто... Нужно побывать))
+                            </p>
+                        </div>
+                    </div>
+                    <div className="comment">
+                        <div className='avatar'>
+
+                        </div>
+                        <div className="comment-place">
+                            <div className='tweet-person'>
+                                <div className='username'>
+                                    Алексей Ильютик
+                                </div>
+                                <div className='datecom'>
+                                    18 Feb 2022 <span className="timecom">22:00</span>
+                                </div>
+                            </div>
+                            <p className="comtext">
+                                Я  был, очень хорошо выглядит. Всем советую посетить!
+                            </p>
+                        </div>
+                    </div>
+                    <div className="comment">
+                        <div className='avatar'>
+
+                        </div>
+                        <div className="comment-place">
+                            <div className='tweet-person'>
+                                <div className='username'>
+                                    Arlinka
+                                </div>
+                                <div className='datecom'>
+                                    18 Feb 2022 <span className="timecom">10:00</span>
+                                </div>
+                            </div>
+                            <p className="comtext">
+                                Превосходное зрелище. Каждому дизайнеру стоит посетить данную прелесть. Хочу сказать, что это было изумительно;)
+                            </p>
+                        </div>
+                    </div>
+                    <div className="addcom">
+                        <p>your comment</p>
+                        <div className="entcom">
+                            <input type="text" placeholder='Enter your comment' />
+                            <button>add</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
       </main>

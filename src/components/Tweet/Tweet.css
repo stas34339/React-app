@@ -1,6 +1,11 @@
 .container-tweet {
-  width: 65%;
+  width: 60%;
   margin: auto;
+}
+.container-tweet .tweet-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 .container-tweet .tweet:not(:first-child) {
   border-top: 0;
@@ -13,10 +18,6 @@
   padding: 10px;
   border: 1px solid #F0EEFF;
   transition: 0.2s all;
-}
-.container-tweet .tweet:hover {
-  background-color: rgba(240, 238, 255, 0.2509803922);
-  cursor: pointer;
 }
 .container-tweet .tweet .avatar {
   width: 48px;
@@ -66,4 +67,103 @@
 .container-tweet .tweet .tweet-place > .btn-like button:hover + span,
 .container-tweet .tweet .tweet-place > .btn-like button:hover {
   color: #ACCDFF;
+}
+.container-tweet .comments {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid #F0EEFF;
+  border-top: 0;
+}
+.container-tweet .comments > p {
+  color: black;
+  font-weight: 400;
+  font-size: 21px;
+  text-transform: capitalize;
+}
+.container-tweet .comments .comment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  background-color: rgba(196, 196, 196, 0.3019607843);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid #F0EEFF;
+  border-radius: 20px;
+}
+.container-tweet .comments .comment .avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 90px;
+  background-color: #C4C4C4;
+}
+.container-tweet .comments .comment .comment-place {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.container-tweet .comments .comment .comment-place .tweet-person {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.container-tweet .comments .comment .comment-place .tweet-person .username {
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+}
+.container-tweet .comments .comment .comment-place .tweet-person .datecom {
+  color: #536471;
+  font-weight: 400;
+}
+.container-tweet .comments .comment .comment-place .tweet-person .datecom .timecom {
+  font-weight: 700;
+}
+.container-tweet .comments .addcom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.container-tweet .comments .addcom > p {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  font-size: 21px;
+  text-transform: capitalize;
+}
+.container-tweet .comments .addcom .entcom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container-tweet .comments .addcom .entcom > input {
+  background-color: #F0EEFF;
+  border-radius: 20px;
+  padding: 20px;
+  width: 80%;
+}
+.container-tweet .comments .addcom .entcom > button {
+  background-color: #1D9BF0;
+  border: 1px solid #1D9BF0;
+  border-radius: 50px;
+  padding: 5px 30px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 12px;
+  transition: 0.2s all;
+}
+.container-tweet .comments .addcom .entcom > button:hover {
+  background-color: #226BCA;
+  border-color: #226BCA;
+}
+.container-tweet .comments .addcom .entcom > button:active {
+  background-color: #1D9BF0;
+  border: 1px solid #1D9BF0;
 }/*# sourceMappingURL=Tweet.css.map */
