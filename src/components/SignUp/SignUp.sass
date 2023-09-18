@@ -1,6 +1,6 @@
-.container-LogIn
+.container-SignUp
     width: 100%
-    .LogIn-block
+    .SignUp-block
         display: flex
         flex-direction: row
         flex-wrap: nowrap
@@ -18,7 +18,8 @@
                 font-weight: 700
                 font-size: 70px
                 color: #fff
-        .login
+        .signup
+            width: 25%
             margin-top: 50px
             display: flex
             flex-direction: column
@@ -26,7 +27,7 @@
             gap: 20px
             > h1
                 font-weight: 700
-                font-size: 60px
+                font-size: 45px
                 color: black
                 text-transform: capitalize
             > form
@@ -34,18 +35,16 @@
                 flex-direction: column
                 flex-wrap: nowrap
                 gap: 20px
-                .logerr
+                .signuperr
                     display: none
                     border: 2px solid #E98787
                     border-radius: 20px
                     padding: 10px
                     background-color: #FFFFFF
-                    width: 80%
                     color: #E98787
                     font-weight: 400
                     font-size: 21px
                 > input
-                    width: 80%
                     border: 1px solid #536471
                     border-radius: 20px
                     padding: 10px
@@ -53,10 +52,10 @@
                     font-size: 21px
                     color: #858585
                 > button
+                    margin-top: 15px
                     border: 1px solid #536471
                     border-radius: 50px
                     background-color: #fff
-                    width: 80%
                     padding: 10px
                     font-weight: 700
                     font-size: 30px
@@ -76,8 +75,8 @@
                     color: #1D9BF0
     .errform
         z-index: 1
-        display: none
-        //display: flex
+        //display: none
+        display: flex
         flex-direction: column
         flex-wrap: nowrap
         justify-content: center

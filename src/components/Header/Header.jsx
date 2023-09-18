@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Header.css'
+import { BiDoorOpen } from 'react-icons/bi'
 
 function Header() {
     return (
@@ -16,9 +17,25 @@ function Header() {
                         <li class="breadcrumb-error"><a href="#">error</a></li>
                     </ul>
                 </div>
-                <button className='login'>
-                    log in
-                </button>
+                <div className="header-login">
+                    <button className='login'>
+                        log in
+                    </button>
+                </div>
+                <div className="header-logout">
+                    <div className="username">
+                        <div className="avatar">
+
+                        </div>
+                        <p className='name'>
+                            Kirill Borisyonok
+                        </p>
+                    </div>
+                    <button className='logout'>
+                        <BiDoorOpen />
+                        <p>LOG OUT</p>
+                    </button>
+                </div>
             </div>
         </div>
       </header>

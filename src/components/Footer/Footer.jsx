@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Footer.css'
+import { FiSearch } from 'react-icons/fi'
 function Footer()
 {
     return(
@@ -18,6 +19,9 @@ function Footer()
                     <div className='date'>
                         18 Feb 2022
                     </div>
+                </div>
+                <div className="footer-block-search">
+                    <FiSearch />
                 </div>
             </div>
         </footer>

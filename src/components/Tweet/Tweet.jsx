@@ -24,9 +24,15 @@ function Tweet() {
                         <div className="text">
                             <p>Студия Артемия Лебедева установила на въезде в Териберку стелу «в форме хвоста только что показавшегося из воды кита».</p>
                         </div>
-                        <div className="btn-like">
-                            <button><FiMessageCircle/></button>
-                            <span>0</span>
+                        <div className="btn-block">
+                            <div className="btn-like">
+                                <button><FiMessageCircle/></button>
+                                <span>0</span>
+                            </div>
+                            <div className="btn-DelEd">
+                                <button className='btn-del'>Delete</button>
+                                <button className='btn-edit'>Edit</button>
+                            </div>
                         </div>
                     </div>
                 </div>

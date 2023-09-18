@@ -53,20 +53,65 @@
   font-size: 21px;
   color: black;
 }
-.container-tweet .tweet .tweet-place .btn-like {
+.container-tweet .tweet .tweet-place .btn-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-like {
   width: auto;
   display: flex;
   flex-direction: row;
   gap: 20px;
   margin-left: 40px;
 }
-.container-tweet .tweet .tweet-place .btn-like button,
-.container-tweet .tweet .tweet-place .btn-like span {
+.container-tweet .tweet .tweet-place .btn-block .btn-like button,
+.container-tweet .tweet .tweet-place .btn-block .btn-like span {
   transition: 0.2s all;
 }
-.container-tweet .tweet .tweet-place > .btn-like button:hover + span,
-.container-tweet .tweet .tweet-place > .btn-like button:hover {
+.container-tweet .tweet .tweet-place .btn-block > .btn-like button:hover + span,
+.container-tweet .tweet .tweet-place .btn-block > .btn-like button:hover {
   color: #ACCDFF;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-DelEd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-DelEd > button {
+  border: 1px solid black;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  transition: 0.2s all;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-DelEd .btn-del {
+  border-color: #858585;
+  color: #858585;
+  padding: 8px 10px;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-DelEd .btn-del:hover {
+  opacity: 0.6;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-DelEd .btn-del:active {
+  opacity: 1;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-DelEd .btn-edit {
+  border-color: #1D9BF0;
+  color: #fff;
+  background-color: #1D9BF0;
+  padding: 8px 20px;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-DelEd .btn-edit:hover {
+  background-color: #226BCA;
+  border-color: #226BCA;
+}
+.container-tweet .tweet .tweet-place .btn-block .btn-DelEd .btn-edit:active {
+  background-color: #1D9BF0;
+  border-color: #1D9BF0;
 }
 .container-tweet .comments {
   display: flex;

@@ -7,6 +7,35 @@ function Main() {
         <main>
             <div className='container'>
                 <div className='main-block'>
+                    <div className='filter-mobile'>
+                        <form className='filter-block'>         
+                            <label>Search tweets by author tittle</label>
+                            <select>
+                                <option disabled selected>Select author</option>
+                                <option>Kirill Borisyonok</option>
+                                <option>Kirill Borisyonok</option>
+                            </select>
+                            <div>
+                                <label>Search tweets by date and time</label>
+                                <div>
+                                    <label>from</label><input placeholder='Enter start date'></input>
+                                    <label>to</label><input placeholder='Enter end date'></input>
+                                </div>
+                                <div>
+                                    <label>from</label><input placeholder='Start time'></input>
+                                    <label>to</label><input placeholder='End time'></input>
+                                </div>
+                            </div>
+                            <label>Search tweets by text</label>
+                            <input placeholder='Enter searh text'></input>
+                            <label>Search tweets by #tags</label>
+                            <input placeholder='Enter search #tags'></input>
+                            <div className='block-btn'>
+                                <button className='filter-clear'>clear</button>
+                                <button className='filter-search'>search</button>
+                            </div>
+                        </form>
+                    </div>
                     <div className='workplace'>
                         <form className='publish'>
                             <label className='avatar'>
@@ -33,9 +62,15 @@ function Main() {
                                     <div className='text'>
                                         <p>Студия Артемия Лебедева установила на въезде в Териберку стелу «в форме хвоста только что показавшегося из воды кита».</p>
                                     </div>
-                                    <div className='btn-like'>
-                                        <button><FiMessageCircle/></button>
-                                        <span>0</span>
+                                    <div className="btn-block">
+                                        <div className="btn-like">
+                                            <button><FiMessageCircle/></button>
+                                            <span>0</span>
+                                        </div>
+                                        <div className="btn-DelEd">
+                                            <button className='btn-del'>Delete</button>
+                                            <button className='btn-edit'>Edit</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -46,7 +81,7 @@ function Main() {
                                 <div className='tweet-place'>
                                     <div className='tweet-person'>
                                         <div className='username'>
-                                            Kirill Borisyonok
+                                            Denis Peskov
                                         </div>
                                         <span>•</span>
                                         <div className='datetweet'>
@@ -57,9 +92,11 @@ function Main() {
                                         <p>#Layzy Бывает сидишь на работе и думаешь: где же денег заработать?!</p>
                                         <img src='/Image.jpg'></img>
                                     </div>
-                                    <div className='btn-like'>
-                                        <button><FiMessageCircle/></button>
-                                        <span>0</span>
+                                    <div className="btn-block">
+                                        <div className='btn-like'>
+                                            <button><FiMessageCircle/></button>
+                                            <span>0</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

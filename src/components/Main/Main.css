@@ -1,3 +1,8 @@
+@media screen and (max-width: 768px) {
+  .container {
+    width: 98%;
+  }
+}
 .main-block {
   margin-top: 20px;
   display: flex;
@@ -5,46 +10,73 @@
   flex-wrap: nowrap;
 }
 .main-block .workplace {
-  display: inline-block;
+  display: block;
   width: 65%;
   text-align: center;
 }
-.main-block .workplace > .publish {
+@media screen and (max-width: 1024px) {
+  .main-block .workplace {
+    width: 100%;
+  }
+}
+.main-block .workplace .publish {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 10px;
   border-right: 1px solid #F0EEFF;
 }
-.main-block .workplace > .publish .avatar {
+.main-block .workplace .publish .avatar {
   width: 48px;
   height: 48px;
   border-radius: 90px;
   background-color: #C4C4C4;
 }
-.main-block .workplace > .publish input {
+.main-block .workplace .publish input {
   border: 1px solid rgba(0, 0, 0, 0.3019607843);
   color: rgba(0, 0, 0, 0.3019607843);
   font-size: 21px;
   font-weight: 400;
   text-align: center;
   height: 48px;
-  width: 90%;
+  width: 75%;
 }
-.main-block .workplace > .publish input::-moz-placeholder {
+@media screen and (max-width: 768px) {
+  .main-block .workplace .publish input {
+    height: 36px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-block .workplace .publish input {
+    font-size: 16px;
+    height: 32px;
+    width: 50%;
+  }
+}
+.main-block .workplace .publish input::-moz-placeholder {
   padding-left: 10px;
   text-align: left;
   color: #858585;
   opacity: 1;
 }
-.main-block .workplace > .publish input::placeholder {
+.main-block .workplace .publish input::placeholder {
   padding-left: 10px;
   text-align: left;
   color: #858585;
   opacity: 1;
 }
-.main-block .workplace > .publish button {
+@media screen and (max-width: 768px) {
+  .main-block .workplace .publish input::-moz-placeholder {
+    padding-left: 5px;
+  }
+  .main-block .workplace .publish input::placeholder {
+    padding-left: 5px;
+  }
+}
+.main-block .workplace .publish button {
   margin-left: auto;
   text-transform: uppercase;
   font-weight: 700;
@@ -56,10 +88,16 @@
   padding: 17px 31px;
   transition: 0.2s all;
 }
-.main-block .workplace > .publish button:hover {
+@media screen and (max-width: 768px) {
+  .main-block .workplace .publish button {
+    padding: 10px 25px;
+    font-size: 10px;
+  }
+}
+.main-block .workplace .publish button:hover {
   background-color: #226BCA;
 }
-.main-block .workplace > .publish button:active {
+.main-block .workplace .publish button:active {
   background-color: #1D9BF0;
 }
 .main-block .workplace .tweets {
@@ -104,32 +142,125 @@
   font-weight: 700;
   font-size: 15px;
 }
+@media screen and (max-width: 768px) {
+  .main-block .workplace .tweets .tweet .tweet-place .tweet-person .username {
+    font-size: 12px;
+  }
+}
 .main-block .workplace .tweets .tweet .tweet-place .tweet-person .datetweet, .main-block .workplace .tweets .tweet .tweet-place .tweet-person span {
   color: #536471;
   font-weight: 400;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .main-block .workplace .tweets .tweet .tweet-place .tweet-person .datetweet, .main-block .workplace .tweets .tweet .tweet-place .tweet-person span {
+    font-size: 12px;
+  }
 }
 .main-block .workplace .tweets .tweet .tweet-place .text {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-align: left;
   font-weight: 400;
   font-size: 21px;
   color: black;
 }
-.main-block .workplace .tweets .tweet .tweet-place .btn-like {
+@media screen and (max-width: 768px) {
+  .main-block .workplace .tweets .tweet .tweet-place .text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-block .workplace .tweets .tweet .tweet-place .text {
+    font-size: 15px;
+  }
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-like {
   width: auto;
   display: flex;
   flex-direction: row;
   gap: 20px;
   margin-left: 40px;
 }
-.main-block .workplace .tweets .tweet .tweet-place .btn-like button,
-.main-block .workplace .tweets .tweet .tweet-place .btn-like span {
+@media screen and (max-width: 768px) {
+  .main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-like {
+    margin-left: 0;
+    gap: 10px;
+  }
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-like button,
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-like span {
   transition: 0.2s all;
 }
-.main-block .workplace .tweets .tweet .tweet-place > .btn-like button:hover + span,
-.main-block .workplace .tweets .tweet .tweet-place > .btn-like button:hover {
+.main-block .workplace .tweets .tweet .tweet-place .btn-block > .btn-like button:hover + span,
+.main-block .workplace .tweets .tweet .tweet-place .btn-block > .btn-like button:hover {
   color: #ACCDFF;
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd {
+    gap: 10px;
+  }
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd > button {
+  border: 1px solid black;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  transition: 0.2s all;
+}
+@media screen and (max-width: 768px) {
+  .main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd > button {
+    font-size: 10px;
+  }
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd .btn-del {
+  border-color: #858585;
+  color: #858585;
+  padding: 8px 10px;
+}
+@media screen and (max-width: 768px) {
+  .main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd .btn-del {
+    padding: 5px 12px;
+  }
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd .btn-del:hover {
+  opacity: 0.6;
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd .btn-del:active {
+  opacity: 1;
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd .btn-edit {
+  border-color: #1D9BF0;
+  color: #fff;
+  background-color: #1D9BF0;
+  padding: 8px 20px;
+}
+@media screen and (max-width: 768px) {
+  .main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd .btn-edit {
+    padding: 5px 20px;
+  }
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd .btn-edit:hover {
+  background-color: #226BCA;
+  border-color: #226BCA;
+}
+.main-block .workplace .tweets .tweet .tweet-place .btn-block .btn-DelEd .btn-edit:active {
+  background-color: #1D9BF0;
+  border-color: #1D9BF0;
 }
 .main-block .workplace .load {
   margin: 20px 0;
@@ -144,6 +275,11 @@
   padding: 10px 20px;
   transition: 0.2s all;
 }
+@media screen and (max-width: 1024px) {
+  .main-block .workplace .load {
+    display: none;
+  }
+}
 .main-block .workplace .load:hover {
   background-color: #226BCA;
 }
@@ -153,6 +289,11 @@
 .main-block .filter {
   display: inline-block;
   width: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .main-block .filter {
+    display: none;
+  }
 }
 .main-block .filter .filter-block {
   display: flex;
@@ -246,4 +387,109 @@
 }
 .main-block .filter .filter-block .block-btn .filter-search:active {
   background-color: #1D9BF0;
+}
+.main-block .filter-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .filter-mobile {
+    display: none;
+    width: 80%;
+    height: 75vh;
+    margin: auto;
+  }
+  .filter-mobile .filter-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .filter-mobile .filter-block > h1 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    text-transform: capitalize;
+    color: black;
+    opacity: 0.7;
+  }
+  .filter-mobile .filter-block label {
+    font-weight: 400;
+    font-size: 21px;
+    color: black;
+    opacity: 0.8;
+  }
+  .filter-mobile .filter-block > select, .filter-mobile .filter-block input {
+    background-color: #F0EEFF;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    height: 4.5vh;
+    color: black;
+    opacity: 0.7;
+  }
+  .filter-mobile .filter-block > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filter-mobile .filter-block > div > div input::-moz-placeholder {
+    text-align: center;
+    padding: 0;
+  }
+  .filter-mobile .filter-block > div > div input::placeholder {
+    text-align: center;
+    padding: 0;
+  }
+  .filter-mobile .filter-block > div > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .filter-mobile .filter-block > div > div > input {
+    width: 40%;
+  }
+  .filter-mobile .filter-block input::-moz-placeholder {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .filter-mobile .filter-block input::placeholder {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .filter-mobile .filter-block .block-btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .filter-mobile .filter-block .block-btn > button {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 20px;
+    transition: 0.2s all;
+  }
+  .filter-mobile .filter-block .block-btn .filter-clear {
+    border: 1px solid #858585;
+    background-color: #fff;
+    color: #858585;
+    text-decoration: underline;
+  }
+  .filter-mobile .filter-block .block-btn .filter-clear:hover {
+    opacity: 0.6;
+  }
+  .filter-mobile .filter-block .block-btn .filter-clear:active {
+    opacity: 1;
+  }
+  .filter-mobile .filter-block .block-btn .filter-search {
+    border: 1px solid #1D9BF0;
+    background-color: #1D9BF0;
+    color: #fff;
+  }
+  .filter-mobile .filter-block .block-btn .filter-search:hover {
+    background-color: #226BCA;
+  }
+  .filter-mobile .filter-block .block-btn .filter-search:active {
+    background-color: #1D9BF0;
+  }
 }/*# sourceMappingURL=Main.css.map */

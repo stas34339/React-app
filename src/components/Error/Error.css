@@ -1,0 +1,38 @@
+.Error-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 80vh;
+}
+.Error-block > h1 {
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  color: black;
+}
+.Error-block > p {
+  font-weight: 400;
+  font-size: 27px;
+  text-align: center;
+  color: black;
+}
+.Error-block > button {
+  margin-top: 20px;
+  width: 35%;
+  border: 1px solid #536471;
+  border-radius: 50px;
+  color: #1D9BF0;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 10px;
+  transition: 0.2s all;
+}
+.Error-block > button:hover {
+  background-color: #F0EEFF;
+}
+.Error-block > button:active {
+  background-color: #fff;
+}/*# sourceMappingURL=Error.css.map */

@@ -1,6 +1,8 @@
 .container
     width: 75%
     margin: auto
+    @media screen and (max-width:768px)
+        width: 90%
 header
     border-bottom: 1px solid #F0EEFF
     .header-block
@@ -21,6 +23,12 @@ header
                 justify-content: space-around
                 margin-left: 50px
                 align-items: center
+                @media screen and (max-width:1024px)
+                    margin-left: 25px
+                @media screen and (max-width:425px)
+                    margin-left: 10px
+                @media screen and (max-width:320px)
+                    margin-left: 5px
             .breadcrumb li:not(:first-child)::before
                 display: inline-block
                 padding: 10px
@@ -33,7 +41,8 @@ header
                 color: black
                 font-weight: 700
                 font-size: 12px
-        >button
+        .header-login button
+            display: none
             max-height: 48px
             max-width: 110px
             text-transform: uppercase
@@ -41,11 +50,75 @@ header
             font-weight: 700
             text-align: center
             color: white
-            padding: 16px 31px
+            padding: 15px 31px
             background-color: #1D9BF0
             border-radius: 50px
             transition: .2s all
-        >button:hover
-            background-color: #226BCA
-        >button:active
-            background-color: #1D9BF0
+            @media screen and (max-width:768px)
+                padding: 10px 20px
+                font-size: 10px
+            &:hover
+                background-color: #226BCA
+            &:active
+                background-color: #1D9BF0
+        .header-logout
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: center
+            align-items: center
+            gap: 50px
+            @media screen and (max-width:1024px)
+                gap: 0
+            > button
+                display: flex
+                flex-direction: row
+                flex-wrap: nowrap
+                gap: 5px
+                justify-content: center
+                text-align: center
+                font-size: 12px
+                font-weight: 700
+                text-align: center
+                color: white
+                padding: 15px 12px
+                background-color: #1D9BF0
+                border-radius: 50px
+                transition: .2s all
+                @media screen and (max-width:1024px)
+                    background-color: #fff
+                    color: black
+                    font-size: 24px
+                    gap: 0
+                    p
+                        display: none
+                &:hover
+                    background-color: #226BCA
+                &:active
+                    background-color: #1D9BF0
+            .username
+                display: flex
+                flex-direction: row
+                flex-wrap: nowrap
+                justify-content: center
+                align-items: center
+                gap: 15px
+                .avatar
+                    width: 48px
+                    height: 48px
+                    border-radius: 90px
+                    background-color: #C4C4C4
+                    @media screen and (max-width:1024px)
+                        width: 36px
+                        height: 36px
+                    @media screen and (max-width:425px)
+                        width: 24px
+                        height: 24px
+                .name
+                    font-weight: 700
+                    font-size: 15px
+                    color: black
+                    @media screen and (max-width:1024px)
+                        font-style: 12px
+                    @media screen and (max-width:425px)
+                        font-size: 10px

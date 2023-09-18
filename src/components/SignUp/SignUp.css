@@ -1,17 +1,17 @@
-.container-LogIn {
+.container-SignUp {
   width: 100%;
 }
-.container-LogIn .LogIn-block {
+.container-SignUp .SignUp-block {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.container-LogIn .LogIn-block .image {
+.container-SignUp .SignUp-block .image {
   width: 60%;
   height: 80vh;
   background-image: url("./screen.jpg");
 }
-.container-LogIn .LogIn-block .image::after {
+.container-SignUp .SignUp-block .image::after {
   content: "#TELL EVERYONE";
   display: block;
   width: 50px;
@@ -22,38 +22,37 @@
   font-size: 70px;
   color: #fff;
 }
-.container-LogIn .LogIn-block .login {
+.container-SignUp .SignUp-block .signup {
+  width: 25%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 20px;
 }
-.container-LogIn .LogIn-block .login > h1 {
+.container-SignUp .SignUp-block .signup > h1 {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 45px;
   color: black;
   text-transform: capitalize;
 }
-.container-LogIn .LogIn-block .login > form {
+.container-SignUp .SignUp-block .signup > form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 20px;
 }
-.container-LogIn .LogIn-block .login > form .logerr {
+.container-SignUp .SignUp-block .signup > form .signuperr {
   display: none;
   border: 2px solid #E98787;
   border-radius: 20px;
   padding: 10px;
   background-color: #FFFFFF;
-  width: 80%;
   color: #E98787;
   font-weight: 400;
   font-size: 21px;
 }
-.container-LogIn .LogIn-block .login > form > input {
-  width: 80%;
+.container-SignUp .SignUp-block .signup > form > input {
   border: 1px solid #536471;
   border-radius: 20px;
   padding: 10px;
@@ -61,36 +60,36 @@
   font-size: 21px;
   color: #858585;
 }
-.container-LogIn .LogIn-block .login > form > button {
+.container-SignUp .SignUp-block .signup > form > button {
+  margin-top: 15px;
   border: 1px solid #536471;
   border-radius: 50px;
   background-color: #fff;
-  width: 80%;
   padding: 10px;
   font-weight: 700;
   font-size: 30px;
   color: #1D9BF0;
   transition: 0.2s all;
 }
-.container-LogIn .LogIn-block .login > form > button:hover {
+.container-SignUp .SignUp-block .signup > form > button:hover {
   background-color: #F0EEFF;
   border-color: black;
 }
-.container-LogIn .LogIn-block .login > form > button:active {
+.container-SignUp .SignUp-block .signup > form > button:active {
   background-color: #fff;
   border: 1px solid #536471;
 }
-.container-LogIn .LogIn-block .login > p {
+.container-SignUp .SignUp-block .signup > p {
   color: black;
   font-weight: 400;
   font-size: 21px;
 }
-.container-LogIn .LogIn-block .login > p > a {
+.container-SignUp .SignUp-block .signup > p > a {
   color: #1D9BF0;
 }
-.container-LogIn .errform {
+.container-SignUp .errform {
   z-index: 1;
-  display: none;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
@@ -105,13 +104,13 @@
   border: 1px solid #000000;
   border-radius: 20px;
 }
-.container-LogIn .errform > h1 {
+.container-SignUp .errform > h1 {
   font-weight: 400;
   font-size: 30px;
   color: black;
   text-align: center;
 }
-.container-LogIn .errform .btn-again {
+.container-SignUp .errform .btn-again {
   border: 1px solid rgba(29, 155, 240, 0.1019607843);
   border-radius: 20px;
   padding: 10px;
@@ -120,8 +119,8 @@
   color: #FFFFFF;
   text-align: center;
 }
-.container-LogIn .errform .formclose {
+.container-SignUp .errform .formclose {
   position: absolute;
   right: 10px;
   top: 10px;
-}/*# sourceMappingURL=LogIn.css.map */
+}/*# sourceMappingURL=SignUp.css.map */
