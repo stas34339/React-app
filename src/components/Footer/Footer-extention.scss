@@ -1,0 +1,11 @@
+@media (max-width:1024px)
+{
+    .footer{
+        &__block{
+            display: none;
+        }
+        &__search{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@media (max-width:1024px)
+{
+    .header{
+        &__breadcrumb{
+            margin-left: 25px;
+        }
+        &__logout{
+            gap: 0;
+            .header__btn
+            {
+                background-color: #fff;
+                color: black;
+                font-size: 24px;
+                gap: 0;
+                p{
+                    display: none;
+                }
+                    
+            }
+        }
+        &__avatar{
+            width: 36px;
+            height: 36px;
+        }
+        &__name{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width:768px)
+{
+    .header{
+        &__container{
+            width: 95%;
+        }
+        &__btn{
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+    }
+}
+@media (max-width:425px)
+{
+    .header{
+        &__breadcrumb{
+            margin-left: 10px;
+        }
+        &__avatar{
+            width: 24px;
+            height: 24px;
+        }
+        &__name{
+            font-size: 10px;
+        }
+    }
+}
+@media (max-width:320px)
+{
+    .header{
+        &__breadcrumb{
+            margin-left: 5px;
+        }
+    }
+}
