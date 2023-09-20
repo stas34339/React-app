@@ -8,7 +8,7 @@ function Header() {
       <header className='header'>
         <div className='header__container'>
             <div className='header__nav'>
-                <a href="#" className='header__logo'><img src='/Subtract.png'></img></a>
+                <a href="./Main/Main.jsx" className='header__logo'><img src='/Subtract.png'></img></a>
                 <ul className='header__breadcrumb'>
                     <li className="header-item header-item-home header-item-active"><a href="#">home</a></li>
                     <li className="header-item header-item-tweet"><a href="#">tweet</a></li>
