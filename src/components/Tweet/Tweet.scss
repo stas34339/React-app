@@ -1,0 +1,227 @@
+.tweet{
+    &__container{
+        width: 60%;
+        margin: auto;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+.tweet-message{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #F0EEFF;
+    &__block{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+    }
+    &__info{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    &__dot{
+        color: #536471;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 21px;
+        color: #000;
+    }
+    &__interaction{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__btn-like{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-left: 40px;
+        button,span{
+            transition: .2s all;
+        }
+        &:hover > span,
+        &:hover > button {
+            color: #ACCDFF
+        }
+    }
+    &__btn-control{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+        font-size: 12px;
+    }
+    &__btn-del{
+        border: 1px solid #858585;
+        color: #858585;
+        padding: 5px 20px;
+        border-radius: 20px;
+        transition: .2s all;
+        &:hover{
+            opacity: .6;
+        }
+        &:active{
+            opacity: 1;
+        }
+    }
+    &__btn-edit{
+        border: 1px soid #1D9BF0;
+        border-radius: 20px;
+        color: #fff;
+        background-color: #1D9BF0;
+        padding: 5px 30px;
+        transition: .2s all;
+        &:hover{
+            background-color: #226BCA;
+            border-color: #226BCA;
+        }
+        &:active{
+            background-color: #1D9BF0;
+            border-color: #1D9BF0;
+        }
+    }
+}
+.tweet-comment{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #F0EEFF;
+    border-top: 0;
+    &__item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        background-color: #C4C4C44D;
+        width: fit-content;
+        padding: 10px;
+        border: 1px solid #F0EEFF;
+        border-radius: 20px;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    &__text{
+        font-size: 18px;
+    }
+
+}
+.tweet-add{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    &__form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    &__block{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+    }
+    &__input{
+        background-color: #F0EEFF;
+        border-radius: 20px;
+        padding: 20px;
+        flex-grow: 1;
+    }
+    &__btn{
+        display: block;
+        width: fit-content;
+        border: 1px solid #1D9BF0;
+        border-radius: 50px;
+        background-color: #1D9BF0;
+        padding: 5px 35px;
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 700;
+        font-size: 12px;
+        transition: .2s all;
+        &:hover{
+            background-color: #226BCA;
+            border-color: #226BCA;
+        }
+        &:active{
+            background-color: #1D9BF0;
+            border: 1px solid #1D9BF0;
+        }
+    }
+    &__btn-active{
+        display: none;
+        position: absolute;
+        padding: 13px 30px;
+        top: 45px;
+        right: 10px;
+        border: 1px solid #1D9BF0;
+        border-radius: 50px;
+        background-color: #1D9BF0;
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 700;
+        font-size: 12px;
+        transition: .2s all;
+        &:hover{
+            background-color: #226BCA;
+            border-color: #226BCA;
+        }
+        &:active{
+            background-color: #1D9BF0;
+            border: 1px solid #1D9BF0;
+        }
+    }
+}
+.avatar{
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 90px;
+    background-color: #C4C4C4;
+}
+.username{
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+}
+.date{
+    color: #536471;
+    font-weight: 400;
+    font-size: 15px;
+    > span{
+        font-weight: 700;
+    }
+}
+.title{
+    color: #000;
+    font-weight: 400;
+    font-size: 21px;
+    text-transform: capitalize;
+}

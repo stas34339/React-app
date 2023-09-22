@@ -1,0 +1,39 @@
+.footer{
+    &__container{
+        width: 75%;
+        margin: auto;
+    }
+    &__block{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: #858585;
+        font-weight: 400;
+        font-size: 15px;
+        gap: 40px;
+    }
+    &__tale{
+        text-transform: capitalize;
+    }
+    &__user{
+        text-transform: capitalize;
+    }
+    &__date{
+        text-transform: capitalize;
+    }
+    &__email a{
+        color: #858585;
+    }
+    &__search{
+        display: none;
+        padding: 10px;
+        text-align: center;
+        transition: .2s all;
+        &:hover{
+            background-color: #F6F6F6D9;
+            color: #0038FFB2;
+        }
+    }
+}
