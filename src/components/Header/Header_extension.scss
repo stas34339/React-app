@@ -1,9 +1,6 @@
 @media (max-width:1024px)
 {
     .header{
-        &__breadcrumb{
-            margin-left: 25px;
-        }
         &__logout{
             gap: 0;
             .header__btn
@@ -26,12 +23,17 @@
             font-size: 12px;
         }
     }
+    .header-nav{
+        &__breadcrumb{
+            margin-left: 25px;
+        }
+    }
 }
 @media (max-width:768px)
 {
     .header{
         &__container{
-            width: 90%;
+            padding: 0 25px;
         }
         &__btn{
             padding: 10px 20px;
@@ -42,8 +44,10 @@
 @media (max-width:425px)
 {
     .header{
-        &__breadcrumb{
-            margin-left: 10px;
+        &__logo{
+            width: 36px;
+            height: 36px;
+            margin-top: 10px;
         }
         &__avatar{
             width: 24px;
@@ -51,6 +55,14 @@
         }
         &__name{
             font-size: 10px;
+        }
+        &__container{
+            padding: 0 10px;
+        }
+    }
+    .header-nav{
+        &__breadcrumb{
+            margin-left: 10px;
         }
     }
 }

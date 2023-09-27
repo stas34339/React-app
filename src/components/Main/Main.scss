@@ -1,7 +1,10 @@
+@import url(/src/assets/Font.scss);
 .main{
+    font-family: "Roboto";
     &__container{
-        width: 75%;
-        margin: auto;
+        max-width: 1250px;
+        padding: 0 50px;
+        margin: 0 auto;
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
@@ -13,6 +16,7 @@
         text-align: center;
     }
     &__filter{
+        flex-shrink: 0;
         width: 30%;
     }
     &__tweets{
@@ -41,7 +45,7 @@
     }
 
 }
-.form-share{
+.main-form-share{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -207,7 +211,7 @@
         }
     }
 }
-.form-filter{
+.main-form-filter{
     width: 100%;
     display: flex;
     flex-direction: column;

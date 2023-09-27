@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './Tweet.scss'
 import './Tweet-extention.scss'
 import { FiMessageCircle } from "react-icons/fi";

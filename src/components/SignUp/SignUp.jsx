@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './SignUp.scss'
 import './SignUp-extention.scss'
 import { FiXCircle } from "react-icons/fi"

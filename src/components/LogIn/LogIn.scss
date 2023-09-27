@@ -1,6 +1,7 @@
+@import url(/src/assets/Font.scss);
 .login{
+    font-family: "Roboto";
     &__container{
-        width: 100%;
         position: relative;
     }
     &__block{
@@ -8,11 +9,13 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        gap: 10px;
     }
     &__image{
-        width: 65%;
+        max-width: 1024px;
+        width: 100%;
         height: 85vh;
-        background-image: url('/public/screen.jpg');
+        background-image: url('/assets/screen.jpg');
         background-repeat: round;
         &::after{
             content: "#TELL EVERYONE";
@@ -26,27 +29,28 @@
             color: #fff;
         }
     }
-    &__form{
-        width: 30%;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 20px;
-    }
+}
+.login-form{
+    flex-shrink: 0;
+    margin-top: 50px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
     &__title{
         font-weight: 700;
         font-size: 60px;
         color: #000;
         text-transform: capitalize;
     }
-}
-.form-login{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 20px;
+    &__block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
     &__error{
         display: block;
         border: 1px solid #E98787;
@@ -96,18 +100,21 @@
     }
 }
 .login-form-error{
-    display: flex;
-    position: absolute;
+    display: none;
+    // display: flex;
+    position: fixed;
     z-index: 1;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    top: 30%;
-    left: 37%;
-    height: 50vh;
-    width: 50vh;
+    top: calc(50% - 325px/2);
+    left: calc(50% - 375px/2);
+    max-height: 325px;
+    height: 100%;
+    max-width: 375px;
+    width: 100%;
     background-color: #D7E8F4;
     border: 1px solid #000;
     border-radius: 20px;

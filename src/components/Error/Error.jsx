@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './Error.scss'
 import './Error-extention.scss'
 

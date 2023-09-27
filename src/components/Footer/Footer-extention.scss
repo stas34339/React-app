@@ -13,18 +13,28 @@
 {
     .footer{
         &__container{
-            width: 95%;
+            padding: 0 25px;
         }
-        &__block{
-            font-size: 12px;
-        }
+    }
+    .footer-nav{
+        font-size: 12px;
+        gap: 35px;
     }
 }
 @media (max-width:425px)
 {
     .footer{
-        &__block{
-            gap: 10px;
+        &__container{
+            padding: 0 10px;
         }
+    }
+    .footer-nav{
+        gap: 30px;
+    }
+}
+@media (max-width:375px)
+{
+    .footer-nav{
+        gap: 10px;
     }
 }

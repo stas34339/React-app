@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './Main.scss'
 import './Main-extention.scss'
 import { FiMessageCircle } from "react-icons/fi";
@@ -8,16 +7,15 @@ function Main() {
     return (
         <main className='main'>
             <div className='main__container'>
-               
                 <div className='main__block'>
-                    <form className='form-share'>
-                        <div className="form-share__sub">
-                            <div className='form-share__avatar'>
+                    <form className='main-form-share'>
+                        <div className="main-form-share__sub">
+                            <div className='main-form-share__avatar'>
 
                             </div>
-                            <input className='form-share__input' type='text' placeholder="What's happening?"></input>
+                            <input className='main-form-share__input' type='text' placeholder="What's happening?"></input>
                         </div>
-                        <button className='form-share__btn'>tell</button>
+                        <button className='main-form-share__btn'>tell</button>
                     </form>
                     <div className='main__tweets'>
                         <div className='main-item'>
@@ -65,7 +63,7 @@ function Main() {
                                 </div>
                                 <div className='main-item__text'>
                                     <p>#Layzy Бывает сидишь на работе и думаешь: где же денег заработать?!</p>
-                                    <img src='/Image.jpg'></img>
+                                    <img src='public\assets\Image.jpg'></img>
                                 </div>
                                 <div className="main-item__interaction">
                                     <div className='main-item__btn-like'>
@@ -83,32 +81,32 @@ function Main() {
                     <button className='main__load'>load more</button>
                 </div>
                 <div className="main__filter">
-                    <form className='form-filter'>
-                        <h1 className='form-filter__title'>filters</h1>            
-                        <label className='form-filter__label'>Search tweets by author tittle</label>
-                        <select className='form-filter__author'>
+                    <form className='main-form-filter'>
+                        <h1 className='main-form-filter__title'>filters</h1>            
+                        <label className='main-form-filter__label'>Search tweets by author tittle</label>
+                        <select className='main-form-filter__author'>
                             <option disabled selected>Select author</option>
                             <option>Kirill Borisyonok</option>
                             <option>Kirill Borisyonok</option>
                         </select>
-                        <div className='form-filter__block02'>
-                            <label className='form-filter__label'>Search tweets by date and time</label>
-                            <div className='form-filter__date'>
-                                <label className='form-filter__label'>from</label><input className='form-filter__input' placeholder='Enter start date'></input>
-                                <label className='form-filter__label'>to</label><input className='form-filter__input' placeholder='Enter end date'></input>
+                        <div className='main-form-filter__block02'>
+                            <label className='main-form-filter__label'>Search tweets by date and time</label>
+                            <div className='main-form-filter__date'>
+                                <label className='main-form-filter__label'>from</label><input className='main-form-filter__input' placeholder='Enter start date'></input>
+                                <label className='main-form-filter__label'>to</label><input className='main-form-filter__input' placeholder='Enter end date'></input>
                             </div>
-                            <div className='form-filter__time'>
-                                <label className='form-filter__label'>from</label><input className='form-filter__input' placeholder='Start time'></input>
-                                <label className='form-filter__label'>to</label><input className='form-filter__input' placeholder='End time'></input>
+                            <div className='main-form-filter__time'>
+                                <label className='main-form-filter__label'>from</label><input className='main-form-filter__input' placeholder='Start time'></input>
+                                <label className='main-form-filter__label'>to</label><input className='main-form-filter__input' placeholder='End time'></input>
                             </div>
                         </div>
-                        <label className='form-filter__label'>Search tweets by text</label>
-                        <input className='form-filter__input' placeholder='Enter searh text'></input>
-                        <label className='form-filter__label'>Search tweets by #tags</label>
-                        <input className='form-filter__input' placeholder='Enter search #tags'></input>
-                        <div className='form-filter__block-btn'>
-                            <button className='form-filter__btn-clear'>clear</button>
-                            <button className='form-filter__btn-search'>search</button>
+                        <label className='main-form-filter__label'>Search tweets by text</label>
+                        <input className='main-form-filter__input' placeholder='Enter searh text'></input>
+                        <label className='main-form-filter__label'>Search tweets by #tags</label>
+                        <input className='main-form-filter__input' placeholder='Enter search #tags'></input>
+                        <div className='main-form-filter__block-btn'>
+                            <button className='main-form-filter__btn-clear'>clear</button>
+                            <button className='main-form-filter__btn-search'>search</button>
                         </div>
                     </form>
                 </div>

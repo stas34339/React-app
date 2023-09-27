@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './LogIn.scss'
 import './LogIn-extention.scss'
 import { FiXCircle } from "react-icons/fi"
@@ -18,14 +17,14 @@ function LogIn() {
                 <div className="login__image">
                     
                 </div>
-                <div className="login__form">
-                    <h1 className='login__title'>stay up to date</h1>
-                    <form action="#" className='form-login' id='form-login'>
-                        <p className='form-login__error'>Incorrect login. Try again</p>
-                        <input className='form-login__input' type="text" placeholder='Enter your login' form='form-login'/>
-                        <input className='form-login__input' type="password" placeholder='Enter your password' form='form-login'/>
-                        <button className='form-login__btn' type='submit' form='form-login'>Log in</button>
-                        <p className='form-login__sub-form'>Not an account? <a href="#">Sign up</a></p>
+                <div className="login-form">
+                    <h1 className='login-form__title'>stay up to date</h1>
+                    <form action="#" className='login-form__block' id='form-login'>
+                        <p className='login-form__error'>Incorrect login. Try again</p>
+                        <input className='login-form__input' type="text" placeholder='Enter your login' form='form-login'/>
+                        <input className='login-form__input' type="password" placeholder='Enter your password' form='form-login'/>
+                        <button className='login-form__btn' type='submit' form='form-login'>Log in</button>
+                        <p className='login-form__sub-form'>Not an account? <a href="#">Sign up</a></p>
                     </form>
                 </div>
             </div>
