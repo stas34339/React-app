@@ -7,7 +7,7 @@
         margin: 0 auto;
     }
     &__search{
-        display: none;
+        display: block;
         padding: 10px;
         text-align: center;
         transition: .2s all;
@@ -19,7 +19,8 @@
 }
 .footer-nav{
     padding: 20px 0;
-    display: flex;
+    //display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;

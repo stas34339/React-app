@@ -2,8 +2,22 @@ import './Main.scss'
 import './Main-extention.scss'
 import { FiMessageCircle } from "react-icons/fi";
 import { BsFillCaretDownFill } from "react-icons/bs"
+import Select from 'react-select'
+
 
 function Main() {
+    const options = [
+        { value: 'Kirill Borisyonok', label: 'Kirill Borisyonok' },
+        { value: 'Denis Peskov', label: 'Denis Peskov' },
+        { value: 'Arlinka', label: 'Arlinka' }
+      ]
+const MySelect = () =>(
+    <Select options={options}
+        placeholder = 'Select author'
+        className='select-container'
+        classNamePrefix='select'
+    />
+)
     return (
         <main className='main'>
             <div className='main__container'>
@@ -84,11 +98,7 @@ function Main() {
                     <form className='main-form-filter'>
                         <h1 className='main-form-filter__title'>filters</h1>            
                         <label className='main-form-filter__label'>Search tweets by author tittle</label>
-                        <select className='main-form-filter__author'>
-                            <option disabled selected>Select author</option>
-                            <option>Kirill Borisyonok</option>
-                            <option>Kirill Borisyonok</option>
-                        </select>
+                        <MySelect />
                         <div className='main-form-filter__block02'>
                             <label className='main-form-filter__label'>Search tweets by date and time</label>
                             <div className='main-form-filter__date'>
