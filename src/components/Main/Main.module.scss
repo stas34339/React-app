@@ -178,6 +178,9 @@
         color: #000;
         font-weight: 700;
         font-size: 15px;
+        &:hover{
+            text-decoration: underline;
+        }
         @media (max-width:768px)
         {
             font-size: 12px;
@@ -378,6 +381,83 @@
         &:active{
             background-color: #1D9BF0;
             border-color: #1D9BF0;
+        }
+    }
+}
+.main_modal
+{
+    position: fixed;
+    right: 25%;
+    top: calc(50% - 150px);
+    z-index: 1;
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 50%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    @media (max-width:560px)
+    {
+        right: calc(50% - 280px/2);
+        min-width: 280px;
+    }
+    &__btn_close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        transition: .2s all;
+        &:hover{
+            opacity: .8;
+        }
+        &:active{
+            opacity: 1;
+        }
+    }
+    &__title{
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+    }
+    &__control{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    &__cancel{
+        border: 1px solid #858585;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #858585;
+        text-transform: capitalize;
+        padding: 5px 10px;
+        transition: .2s all;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__del{
+        border: 1px solid #1D9BF0;
+        border-radius: 20px;
+        background-color: #1D9BF0;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 5px 15px;
+        transition: .2s all;
+        &:hover{
+            background-color: #226BCA;
+        }
+        &:active{
+            background-color: #1D9BF0;
         }
     }
 }

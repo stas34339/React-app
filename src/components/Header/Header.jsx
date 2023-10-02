@@ -24,14 +24,14 @@ function Header() {
                 </button>
             </div>
             <div className={classNames(s.header__logout, s.header__btn_is_active)}>
-                <div className={s.header__username}>
+                <a href='#' className={s.header__username}>
                     <div className={s.header__avatar}>
 
                     </div>
                     <p className={s.header__name}>
                         Kirill Borisyonok
                     </p>
-                </div>
+                </a>
                 <button className={s.header__logout_btn}>
                     <BiDoorOpen className={s.btn_item}/>
                     <p>log out</p>

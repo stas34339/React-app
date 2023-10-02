@@ -1,7 +1,7 @@
 import s from './Main.module.scss'
 import './Select.scss'
 import { FiMessageCircle } from "react-icons/fi";
-import { BsFillCaretDownFill } from "react-icons/bs"
+import { FiXCircle } from "react-icons/fi";
 import Select from 'react-select'
 import classNames from 'classnames';
 
@@ -22,6 +22,16 @@ const MySelect = () =>(
     return (
         <main className={s.main}>
             <div className={s.main__container}>
+                <div className={s.main_modal}>
+                    <FiXCircle className={s.main_modal__btn_close}/>
+                    <div className={s.main_modal__title}>
+                        Do you really want to delete your tweet?
+                    </div>
+                    <div className={s.main_modal__control}>
+                        <button className={s.main_modal__cancel}>cancel</button>
+                        <button className={s.main_modal__del}>delete</button>
+                    </div>
+                </div>
                 <div className={s.main__block}>
                     <form className={s.main_form_share}>
                         <div className={s.main_form_share__sub}>
@@ -39,9 +49,9 @@ const MySelect = () =>(
                             </div>
                             <div className={s.main_item__tweet}>
                                 <div className={s.main_item__info}>
-                                    <div className={s.main_item__username}>
+                                    <a href='#' className={s.main_item__username}>
                                         Kirill Borisyonok
-                                    </div>
+                                    </a>
                                     <span>•</span>
                                     <div className={s.main_item__datetweet}>
                                         17 Feb 2022 20:00
@@ -68,9 +78,9 @@ const MySelect = () =>(
                             </div>
                             <div className={s.main_item__tweet}>
                                 <div className={s.main_item__info}>
-                                    <div className={s.main_item__username}>
+                                    <a href='#' className={s.main_item__username}>
                                         Denis Peskov
-                                    </div>
+                                    </a>
                                     <span>•</span>
                                     <div className={s.main_item__datetweet}>
                                         17 Feb 2022 20:00
