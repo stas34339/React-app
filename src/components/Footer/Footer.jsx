@@ -1,26 +1,25 @@
-import './Footer.scss'
-import './Footer-extention.scss'
+import s from './Footer.module.scss'
 import { FiSearch } from 'react-icons/fi'
 function Footer()
 {
     return(
-        <footer className='footer'>
-            <div className='footer__container'>
-                <div className='footer-nav'>
-                    <div className='footer-nav__element'>
+        <footer className={s.footer}>
+            <div className={s.footer__container}>
+                <div className={s.footer_nav}>
+                    <div className={s.footer_nav__element}>
                         tale
                     </div>
-                    <div className='footer-nav__element'>
+                    <div className={s.footer_nav__element}>
                         kirill borisyonok
                     </div>
-                    <div className='footer-nav__element'>
+                    <div className={s.footer_nav__element}>
                         <a href='#'>boravdv@mail.ru</a>
                     </div>
-                    <div className='footer-nav__element'>
+                    <div className={s.footer_nav__element}>
                         18 Feb 2022
                     </div>
                 </div>
-                <div className="footer__search">
+                <div className={s.footer__search}>
                     <FiSearch />
                 </div>
             </div>

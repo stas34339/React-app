@@ -18,12 +18,12 @@ function Header() {
                     <li className={classNames(s.header_nav__error, s.header_nav__element)}><a href="#">error</a></li>
                 </ul>
             </div>
-            <div className={s.header__login}>
-                <button className={s.header__btn}>
+            <div className={classNames(s.header__login)}>
+                <button className={s.header__login_btn}>
                     <p>log in</p>
                 </button>
             </div>
-            <div className={s.header__logout}>
+            <div className={classNames(s.header__logout, s.header__btn_is_active)}>
                 <div className={s.header__username}>
                     <div className={s.header__avatar}>
 
@@ -32,7 +32,7 @@ function Header() {
                         Kirill Borisyonok
                     </p>
                 </div>
-                <button className={s.header__btn}>
+                <button className={s.header__logout_btn}>
                     <BiDoorOpen className={s.btn_item}/>
                     <p>log out</p>
                 </button>

@@ -1,4 +1,4 @@
-@import url(/src/assets/Font.scss);
+@import url(/src/assets/Fonts/Font.scss);
 .header{
     border-bottom: 1px solid #F0EEFF;
     font-family: 'Roboto';
@@ -31,9 +31,8 @@
     &__login
     {
         display: none;
-        // display: block;
     }
-    &__btn{
+    &__login_btn{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -47,6 +46,11 @@
         padding: 15px 30px;
         border-radius: 50px;
         transition: .2s all;
+        @media (max-width:1024px)
+        {
+            font-size: 10px;
+            padding: 12px 25px;
+        }
         &:hover{
             background-color: #226BCA;
         }
@@ -56,6 +60,21 @@
         .btn-item{
             font-size: 18px;
         }
+    }
+    &__logout_btn{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        background-color: #1D9BF0;
+        padding: 15px 30px;
+        border-radius: 50px;
+        transition: .2s all;
         @media (max-width:1024px)
         {
             background-color: #fff;
@@ -71,10 +90,37 @@
             padding: 10px 20px;
             font-size: 10px;
         }
+        @media (min-width:1024px)
+        {
+            &:hover{
+            background-color: #226BCA;
+            }
+            &:active{
+                background-color: #1D9BF0;
+            }
+        }
+        @media (max-width:1024px)
+        {
+            .btn_item:hover{
+                opacity: .5;
+            }
+        }
+        .btn_item{
+            font-size: 18px;
+            @media (max-width:1024px)
+            {
+                &:hover{
+                    opacity: .5;
+                }
+                &:active{
+                    opacity: 1;
+                }
+            }
+        }
     }
     &__logout
     {
-        display: flex;
+        display: none;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
@@ -84,6 +130,9 @@
         {
             gap: 0;
         }
+    }
+    &__btn_is_active{
+        display: flex;
     }
     &__avatar{
         width: 48px;

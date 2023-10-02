@@ -1,0 +1,51 @@
+@import url(/src/assets/Fonts/Font.scss);
+.footer{
+    font-family: "Roboto";
+    &__container{
+        max-width: 1250px;
+        padding: 0 50px;
+        margin: 0 auto;
+        @media (max-width:1024px){
+            padding: 0;
+        }
+    }
+    &__search{
+        display: none;
+    }
+    @media (max-width:1024px)
+    {
+        &__search{
+            display: block;
+            padding: 10px;
+            text-align: center;
+            transition: .2s all;
+            &:hover{
+                background-color: #F6F6F6D9;
+                color: #0038FFB2;
+            }
+        }
+    }
+}
+.footer_nav{
+    display: none;
+}
+@media (min-width:1025px){
+    .footer_nav{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: #858585;
+        font-weight: 400;
+        font-size: 15px;
+        gap: 40px;
+        &__element{
+            text-transform: capitalize;
+        }
+        &__element a{
+            text-transform: none;
+            color: #858585;
+        }
+    }
+}

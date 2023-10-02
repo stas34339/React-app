@@ -1,0 +1,23 @@
+.select{
+    &__control{
+        border: 1px solid #F0EEFF !important;
+        border-radius: 20px !important;
+        outline: none !important;
+        background-color: #F0EEFF !important;
+        opacity: .7 !important;
+    }
+    &__menu{
+        border: 1px solid #F0EEFF !important;
+        border-radius: 20px !important;
+        background-color: #F0EEFF !important;
+    }
+    &__option{
+        border-radius: 20px !important;
+        &__is-active{
+            background-color: #1D9BF0 !important;
+        }
+        &__is-selected{
+            background-color: #000 !important;
+        }
+    }
+}
