@@ -1,7 +1,20 @@
 import s from './LogIn.module.scss'
 import { FiXCircle } from "react-icons/fi"
+import { useForm } from "react-hook-form"
 
 function LogIn() {
+    const {
+        register,
+        formState: { errors },
+        handleSubmit,
+        reset
+      } = useForm({
+        mode: 'onBlur'
+      }
+      )
+      const onSubmit = (data) => {
+        reset();
+      };
     return (
       <main className={s.login}>
         <div className={s.login__container}>
@@ -17,12 +30,19 @@ function LogIn() {
                     
                 </div>
                 <div className={s.login_form}>
-                    <h1 className={s.login_form__title}>stay up to date</h1>
-                    <form action="#" className={s.login_form__block} id='form-login'>
-                        <p className={s.login_form__error}>Incorrect login. Try again</p>
-                        <input className={s.login_form__input} type="text" placeholder='Enter your login' form='form-login'/>
-                        <input className={s.login_form__input} type="password" placeholder='Enter your password' form='form-login'/>
-                        <button className={s.login_form__btn} type='submit' form='form-login'>Log in</button>
+                    <form className={s.login_form__block} onSubmit={handleSubmit(onSubmit)}>
+                        <h1 className={s.login_form__title}>stay up to date</h1>
+                        <label className={s.login_form__label}>
+                            <input className={s.login_form__input} type='text' placeholder='Enter your login'
+                            {...register('login', {required: "Incorrect login. Try again"})}/>
+                            {errors?.login && <p className={s.login_form__error}>{errors?.login.message || "Error"}</p>}
+                        </label>
+                        <label className={s.login_form__label}>
+                            <input className={s.login_form__input} type="password" placeholder='Enter your password'
+                            {...register('password', {required:"Incorrect password. Try again"})}/>
+                            {errors?.password && <p className={s.login_form__error}>{errors?.password.message || "Error"}</p>}
+                        </label>
+                        <button className={s.login_form__btn}>Log in</button>
                         <p className={s.login_form__sub_form}>Not an account? <a href="#">Sign up</a></p>
                     </form>
                 </div>

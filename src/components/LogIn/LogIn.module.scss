@@ -83,6 +83,7 @@
         display: block;
         border: 1px solid #E98787;
         border-radius: 20px;
+        margin-top: 5px;
         padding: 10px;
         background-color: #fff;
         width: 80%;
@@ -132,6 +133,7 @@
         border-radius: 50px;
         background-color: #fff;
         width: 80%;
+        margin-top: 30px;
         padding: 10px;
         font-weight: 700;
         font-size: 30px;
@@ -156,12 +158,14 @@
         }
     }
     &__sub_form{
+        margin-top: 30px;
         color: #000;
         font-weight: 400;
         font-size: 21px;
         @media (max-width:1024px)
         {
             order: 1;
+            margin-top: -15px;
         }
         > a{
             color: #1D9BF0;

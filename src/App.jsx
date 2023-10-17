@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './reset.css'
+import s from './App.module.scss'
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Tweet from './components/Tweet/Tweet'
@@ -13,9 +14,11 @@ function App() {
 
   return (
     <>
+      <div className={s.container_app}>
       <Header />
-      <Main />
+      <LogIn />
       <Footer />
+      </div>
     </>
   )
 }
