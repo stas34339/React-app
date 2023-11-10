@@ -1,7 +1,5 @@
 import s from './Header.module.scss'
 import classNames from 'classnames'
-//import './Header.scss'
-//import './Header_extension.scss'
 import { BiDoorOpen } from 'react-icons/bi'
 
 function Header() {
@@ -9,7 +7,7 @@ function Header() {
       <header className={s.header}>
         <div className={s.header__container}>
             <div className={s.header_nav}>
-                <a href="./Main/Main.jsx" className={s.header_nav__logo}><img src='/assets/Subtract.png'></img></a>
+                <a href="#" className={s.header_nav__logo}><img src='/assets/Subtract.png'></img></a>
                 <ul className={s.header_nav__breadcrumb}>
                     <li className={classNames(s.header_nav__home, s.header_nav__element)}><a href="#">home</a></li>
                     <li className={classNames(s.header_nav__tweet, s.header_nav__element)}><a href="#">tweet</a></li>

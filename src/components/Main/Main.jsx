@@ -5,7 +5,6 @@ import { FiXCircle } from "react-icons/fi";
 import Select from 'react-select'
 import classNames from 'classnames';
 
-
 function Main() {
     const options = [
         { value: 'Kirill Borisyonok', label: 'Kirill Borisyonok' },
@@ -19,17 +18,28 @@ const MySelect = () =>(
         classNamePrefix='select'
     />
 )
+const Open_modal = () =>
+{
+    let elem = document.getElementById('main_modal')
+    elem.classList.remove(s['main_modal'])
+    elem.classList.add(s['main_modal_active'])
+}
+const Close_modal = () =>{
+    let elem = document.getElementById('main_modal')
+    elem.classList.remove(s['main_modal_active'])
+    elem.classList.add(s['main_modal'])
+}
     return (
         <main className={s.main}>
             <div className={s.main__container}>
-                <div className={s.main_modal}>
-                    <FiXCircle className={s.main_modal__btn_close}/>
-                    <div className={s.main_modal__title}>
+                <div className={s.main_modal} id='main_modal'>
+                    <FiXCircle className={s.main_modal_active__btn_close} onClick={Close_modal}/>
+                    <div className={s.main_modal_active__title}>
                         Do you really want to delete your tweet?
                     </div>
-                    <div className={s.main_modal__control}>
-                        <button className={s.main_modal__cancel}>cancel</button>
-                        <button className={s.main_modal__del}>delete</button>
+                    <div className={s.main_modal_active__control}>
+                        <button className={s.main_modal_active__cancel}>cancel</button>
+                        <button className={s.main_modal_active__del}>delete</button>
                     </div>
                 </div>
                 <div className={s.main__block}>
@@ -66,7 +76,7 @@ const MySelect = () =>(
                                         <span>0</span>
                                     </div>
                                     <div className={classNames(s.main_item__block_btn, s.main_item__block_btn_active)}>
-                                        <button className={s.main_item__btn_del}>Delete</button>
+                                        <button className={s.main_item__btn_del} onClick={Open_modal}>Delete</button>
                                         <button className={s.main_item__btn_edit}>Edit</button>
                                     </div>
                                 </div>
@@ -96,8 +106,8 @@ const MySelect = () =>(
                                         <span>0</span>
                                     </div>
                                     <div className={s.main_item__block_btn}>
-                                    <button className={s.main_item__btn_del}>Delete</button>
-                                        <button className={s.main_item__btn_edit}>Edit</button>
+                                    <button className={s.main_item__btn_del} onClick={Open_modal}>Delete</button>
+                                    <button className={s.main_item__btn_edit}>Edit</button>
                                     </div>
                                 </div>
                             </div>

@@ -384,7 +384,10 @@
         }
     }
 }
-.main_modal
+.main_modal{
+    display: none;
+}
+.main_modal_active
 {
     position: fixed;
     right: 25%;
